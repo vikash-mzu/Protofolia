@@ -1,0 +1,78 @@
+ {% extends 'base.html'%}
+ {% load static %}
+{% block title %} Contact  {% endblock title %}
+  {% block main_content %}
+ <br>
+  <div class="row">
+     <div class="col-sm-3 mb-3 mb-sm-0">
+     
+         <div class="card">
+            <div class="card-body">
+              <img src="{% static 'images/1.jpeg' %}" height="320pixcel" width ="320pixcel">
+
+                
+            </div>
+            <!--THISI -->
+            
+      </div>
+         </div>
+
+         <!--this 2nd tag-->
+      <div class="col-sm-3 mb-3 mb-sm-0">
+         <div class="card">
+            <div class="card-body">
+              <img src="{% static 'images/contact.jpg' %}"  height="320pixcel" width ="320pixcel">
+
+                  <a href="https://www.facebook.com/profile.php?id=61552032963994"  style="background-color:white;" <li><img class="social" src="{% static 'images/facebook.png' %}"></li></a>
+					  <a href="https://www.linkedin.com/in/vikash-kumar-0b3b36287/" style="background-color:white;"  <li><img class="social" src="{% static 'images/linkedin.png' %}"></li></a>
+					  <a href="https://twitter.com/VikashKumar5_m" style="background-color:white;" <li><img class="social" src="{% static 'images/twitter.png' %}"></li></a>
+					  <a href="https://studio.youtube.com/channel/UCZibr0vcX1yxXSXU-kPK9_Q" style="background-color:white;" <li><img class="social" src="{% static 'images/youtube.png' %}"></li></a>
+        
+            </div>
+            <!--THISI -->
+            
+
+         </div>
+       </div>
+         
+         
+
+
+  <div class="col-sm-6"> 
+    <div class="card">
+      <div class="card-body">
+          
+           
+      <form action="{% url 'con' %}" method="post">
+          {% csrf_token %}
+
+    <div class="mb-3">
+       <label for="exampleInputname" class="form-label">Name</label>
+       <input type="text" class="form-control" id="exampleInputname" name= "name" placeholder="Enter Your Name" >
+     </div>
+  <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Email address</label>
+       <input type="email" class="form-control" name="email" id="exampleInputEmail1" placeholder="Enter Your Email">
+       <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+  <div class="mb-3">
+    <label for="exampleInputcontact" class="form-label">Contact</label>
+    <input type="text" name="contact" class="form-control" id="exampleInputcontact" placeholder="Enter Your Contact">
+  </div>
+   <div class="mb-3">
+    <label for="exampleInputmessage" class="form-label">Message</label>
+    <input type="text" name="message" class="form-control" id="exampleInputmessage" placeholder="Enter Your Message">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox"  class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary"  value="smt">Submit</button>
+</form>
+        
+      </div>
+    </div>
+  </div>
+</div>
+  
+  {% endblock main_content%}

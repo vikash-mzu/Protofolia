@@ -1,0 +1,110 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Vikash Protofolia {% endblock title %}
+ {% block main_content %}
+    
+<body>
+	<br>
+    <br>
+	<div class="container" style="background-color:black;">
+		<div class="row" style="background-color:black;">
+			<div class="col-md-3" style="background-color:black;">
+				<div class="card card-body h-100  border-info" id="profile-wrapper" style="background-color:#A52A2A;">
+					<img id="profile-pic" src="{% static 'images/1.jpeg' %}" >
+					<hr>
+					<h4>Hi I'm Vikash Kumar!</h4>
+					<p >I am Python Developer </p>
+				</div>
+			</div>
+
+			<div class="col-md-9" style="background-color:black;">
+				<div class="card card-body h-100  border-info" style="background-color:black;">
+					<h4 style="color:#FFFF00;">Looking  Developer Role </h4>
+					<hr>
+                    <p style="color:#6A5ACD;">Hello, I'm Vikash Kumar, a passionate Python developer with a strong love for coding and problem-solving. I am dedicated to creating efficient and elegant solutions using Python. Welcome to my portfolio, where you can explore my journey and the projects I've worked on.</p>
+                                                                                                                                                                                                                                                                                                                  
+					<p style="color:#6A5ACD;">I am a passionate and aspiring Python developer eager to embark on a rewarding journey in the world of programming. With a strong foundation in Python and a hunger to learn and grow, I am excited to contribute my skills and creativity to solve real-world problems through code.</p>
+
+
+					<p style="color:#6A5ACD;">From this you’ll see that I’m someone that jumps before I can talk myself out of doing something scary.</p>
+
+					<ul class="social-links" >
+					  <a href="https://www.facebook.com/profile.php?id=61552032963994"  style="background-color:white;" <li><img class="social" src="{% static 'images/facebook.png' %}"></li></a>
+					  <a href="https://www.linkedin.com/in/vikash-kumar-0b3b36287/" style="background-color:white;"  <li><img class="social" src="{% static 'images/linkedin.png' %}"></li></a>
+					  <a href="https://twitter.com/VikashKumar5_m" style="background-color:white;" <li><img class="social" src="{% static 'images/twitter.png' %}"></li></a>
+					  <a href="https://studio.youtube.com/channel/UCZibr0vcX1yxXSXU-kPK9_Q" style="background-color:white;" <li><img class="social" src="{% static 'images/youtube.png' %}"></li></a>
+					</ul>
+
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100" style="background-color:powderblue;">
+					<h5>My Experience as a Developer</h5>
+					<hr>
+					<p style="color:#6A5ACD;">Python Developer</p>
+					<p>Coding:I am  write clean, readable, and maintainable Python code to implement various features and functionalities in software projects.</p>
+
+                    <p>Testing: I am  conduct testing and debugging to identify and fix issues in the code, ensuring that the software functions correctly.</p>
+
+                    <p>Documentation: I am document your code, workflows, and processes to make it understandable for other team members and future reference.</p>
+
+                    <p>Collaboration: I am collaborate with other developers, team members, and stakeholders to gather requirements, share ideas, and work collectively on projects.</p>
+
+                    <p> Learning: I am actively seek opportunities for learning and improving your Python skills. You are open to feedback and strive to continuously grow as a developer.</p>
+
+                    <p> Problem Solving: I am analyze problems and work on solutions, demonstrating your problem-solving abilities.</p>
+					</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100" style="background-color:powderblue;" >
+					<h5>What I Know</h5>
+					<hr>
+					<p style="color:#6A5ACD;">Python Developer </p>
+					<ul class="Know" >
+                    
+					</ul >
+                       <li><img class="social" src="{% static 'images/py.png' %}"> - Python</li>
+					   <li><img class="social" src="{% static 'images/dj.png' %}"> - Django</li>
+					   <li><img class="social" src="{% static 'images/my.png' %}"> - Mysql</li>
+                       <li><img class="social" src="{% static 'images/ml.png' %}"> - Machine Learning</li>
+                       <li><img class="social" src="{% static 'images/a.png' %}">  - Api Developement</li>
+					   <li><img class="social" src="{% static 'images/b.png' %}">  - BootStrap</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="card card-body h-100" style="background-color:#008080;">
+					<h5 style="color:#000000;" >How I Learn</h5>
+					</ul >
+                       <li style="color:#000000;"><img class="social" src="{% static 'images/py.png' %}"> - Python - From IBM </li>
+					   <li style="color:#000000;"><img class="social" src="{% static 'images/dj.png' %}"> - Django - From Aptron Institute In Delhi </p></li>
+					   <li style="color:#000000;"><img class="social" src="{% static 'images/my.png' %}"> - Mysql  - From Ducat Institute In Delhi</p></li>
+                       <li style="color:#000000;"><img class="social" src="{% static 'images/ml.png' %}"> - Machine Learning - From Udemy</p></li>
+                       <li style="color:#000000;"><img class="social" src="{% static 'images/a.png' %}">  - Api Developement  - From Aptron Institute In Delhi</p></li>
+					   <li style="color:#000000;"><img class="social" src="{% static 'images/b.png' %}">  - BootStrap         - From Aptron Institute In Delhi</p></li>
+                    </ul>
+				</div>
+			</div>
+
+			<div class="col-md-6">
+				<div class="card card-body h-100" style="background-color:#008080;">
+					<h5 style="color:#000000;">Quotes</h5>
+				<hr>
+				<p style="color:#000000;">“If you want to be Great, Think Great and Positive.”</p>
+				<p style="color:#000000;">“Self-control is the Mantra of Success” </p>
+
+				</div>
+			</div>
+		</div>
+		<br>
+	</div>
+
+ {% endblock main_content %}
